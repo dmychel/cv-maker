@@ -20,8 +20,8 @@ const PersonalForm = ({ setPersonal }) => {
 
   return (
     <>
-      <div className="form-container">
-        <h2>Personal Information</h2>
+      <div className="forms-container">
+        <h2 className="personal-h2">Personal Information</h2>
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Full Name</label>
           <input
