@@ -24,13 +24,16 @@ function App() {
     setEduForms([...eduForms, newForm]);
   };
 
-  const deleteExpItem = (form) => {
-    const newExpForm = expForms.filter((item) => item.id !== form.id);
-    setExperience(newExpForm);
-    setExpForms(newExpForm);
+  const deleteExp = (item) => {
+    const newExp = expForms.filter((form) => form.id !== item);
+    setExperience(newExp);
+    setExpForms(newExp);
+  };
 
-    // const expItem = item.filter((exp) => exp.id === exp.id);
-    // console.log(expItem);
+  const deleteEdu = (item) => {
+    const newEdu = eduForms.filter((form) => form.id !== item);
+    setEducation(newEdu);
+    setEduForms(newEdu);
   };
 
   return (
@@ -46,7 +49,8 @@ function App() {
           createEduForm={createEduForm}
           expForms={expForms}
           eduForms={eduForms}
-          deleteExpItem={deleteExpItem}
+          deleteExp={deleteExp}
+          deleteEdu={deleteEdu}
         />
         <Resume
           personal={personal}
