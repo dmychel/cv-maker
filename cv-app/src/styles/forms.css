@@ -6,7 +6,7 @@
   color: white;
 }
 
-.form-container form {
+.forms-container form {
   display: flex;
   flex-direction: column;
   gap: 0.25em;
@@ -16,7 +16,16 @@
   border-bottom-left-radius: 5px;
 }
 
-.form-container h2 {
+.personal-h2 {
+  background-color: #149eca;
+}
+
+.forms-container button {
+  border: none;
+  cursor: pointer;
+}
+
+.forms-container h2 {
   background-color: #149eca;
   text-align: center;
   border-top-right-radius: 5px;
@@ -35,8 +44,6 @@
 .form-header button {
   background-color: #045b77;
   color: white;
-  border: none;
-  cursor: pointer;
 }
 
 .open {
@@ -54,6 +61,24 @@
 
 .delete:hover {
   color: red;
+}
+
+.add-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.add-item {
+  background-color: #149eca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
 
 .submit {
