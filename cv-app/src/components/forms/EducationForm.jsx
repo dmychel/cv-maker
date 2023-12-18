@@ -12,14 +12,32 @@ const EducationForm = ({
   const [achieve, setAchieve] = useState("Acadmenic Accolade");
   const [date, setDate] = useState("2023");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, item) => {
     e.preventDefault();
-    const newObject = {
-      uni: uni,
-      achieve: achieve,
-      date: date,
-    };
-    setEducation([...education, newObject]);
+    if (education.length === 0) {
+      console.log(education);
+      const newObject = {
+        uni: uni,
+        achieve: achieve,
+        date: date,
+        id: item.id,
+      };
+      setEducation([...education, newObject]);
+    } else {
+      education.map((edu) => {
+        if (item.id === edu.id) {
+          alert(`You cannot submit the same form more than once!`);
+        } else {
+          const newObject = {
+            uni: uni,
+            achieve: achieve,
+            date: date,
+            id: item.id,
+          };
+          setEducation([...education, newObject]);
+        }
+      });
+    }
   };
 
   return (
@@ -35,7 +53,7 @@ const EducationForm = ({
                 &#x2715;
               </button>
             </div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={(e) => handleSubmit(e, item)}>
               <label htmlFor="uni">University</label>
               <input
                 type="text"

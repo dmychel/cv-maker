@@ -15,14 +15,33 @@ const ExperienceForm = ({
 
   const handleSubmit = (e, item) => {
     e.preventDefault();
-    const newObject = {
-      company: company,
-      title: title,
-      date: date,
-      description: description,
-      id: item.id,
-    };
-    setExperience([...experience, newObject]);
+    if (experience.length === 0) {
+      const newObject = {
+        company: company,
+        title: title,
+        date: date,
+        description: description,
+        id: item.id,
+      };
+      setExperience([...experience, newObject]);
+    } else {
+      experience.map((exp) => {
+        if (item.id === exp.id) {
+          console.log("not");
+          alert(`You cannot submit the same form more than once!`);
+        } else {
+          console.log("yes");
+          const newObject = {
+            company: company,
+            title: title,
+            date: date,
+            description: description,
+            id: item.id,
+          };
+          setExperience([...experience, newObject]);
+        }
+      });
+    }
   };
 
   return (
