@@ -3,6 +3,34 @@
     background-color: white;
     height: 842px;
     width: 594px;
-    padding: 10px;
     font-size: .75rem;
+}
+
+.personal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    background-color: #252525;
+    color: antiquewhite;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.exp-master,
+.edu-master {
+    margin-top: 2%;
+    padding: 10px;
+}
+
+.exp-master h2,
+.edu-master h2 {
+    border-bottom: 2px solid;
 }
