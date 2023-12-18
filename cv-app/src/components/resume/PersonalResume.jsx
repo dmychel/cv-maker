@@ -1,12 +1,14 @@
-const PersonalResume = () => {
+import PropTypes from "prop-types";
+
+const PersonalResume = ({ personal }) => {
   return (
     <>
       <div className="personal">
-        <h2>Full Name</h2>
+        <h2>{personal.name}</h2>
         <div className="contact">
-          <p>Email@mail.com</p>
-          <p>(000) 000 0000</p>
-          <p>github.com/github</p>
+          <p>{personal.email}</p>
+          <p>{personal.number}</p>
+          <p>{personal.other}</p>
         </div>
       </div>
     </>
@@ -14,3 +16,7 @@ const PersonalResume = () => {
 };
 
 export default PersonalResume;
+
+PersonalResume.propTypes = {
+  personal: PropTypes.object,
+};
