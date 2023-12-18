@@ -27,10 +27,8 @@ const ExperienceForm = ({
     } else {
       experience.map((exp) => {
         if (item.id === exp.id) {
-          console.log("not");
           alert(`You cannot submit the same form more than once!`);
         } else {
-          console.log("yes");
           const newObject = {
             company: company,
             title: title,
