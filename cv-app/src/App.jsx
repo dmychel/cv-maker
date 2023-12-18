@@ -25,15 +25,17 @@ function App() {
   };
 
   const deleteExp = (item) => {
-    const newExp = expForms.filter((form) => form.id !== item);
+    const newExp = experience.filter((exp) => exp.id !== item);
+    const newExpForm = expForms.filter((form) => form.id !== item);
     setExperience(newExp);
-    setExpForms(newExp);
+    setExpForms(newExpForm);
   };
 
   const deleteEdu = (item) => {
-    const newEdu = eduForms.filter((form) => form.id !== item);
+    const newEdu = education.filter((edu) => edu.id !== item);
+    const newEduForm = eduForms.filter((form) => form.id !== item);
     setEducation(newEdu);
-    setEduForms(newEdu);
+    setEduForms(newEduForm);
   };
 
   return (
