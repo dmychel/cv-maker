@@ -6,6 +6,12 @@
   color: white;
 }
 
+.forms-container {
+  background-color: #0f1114;
+  padding: 10px;
+}
+
+
 .forms-container form {
   display: flex;
   flex-direction: column;
@@ -15,6 +21,11 @@
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+.form-container {
+  margin-bottom: 10%;
+}
+
 
 .personal-h2 {
   background-color: #149eca;
@@ -67,7 +78,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
 .add-item {
@@ -84,7 +94,7 @@
 .submit {
   width: 50%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 2%;
   background-color: #149eca;
   cursor: pointer;
 }
