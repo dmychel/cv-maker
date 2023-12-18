@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 import { useState } from "react";
 
 const PersonalForm = ({ setPersonal }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [other, setOther] = useState("");
+  const [name, setName] = useState("Full Name");
+  const [email, setEmail] = useState("mail@mail.com");
+  const [number, setNumber] = useState("(000) 000 0000");
+  const [other, setOther] = useState("github.com/github");
 
   const handleSubmit = (e) => {
     e.preventDefault();
