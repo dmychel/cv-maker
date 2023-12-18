@@ -15,7 +15,6 @@ const EducationForm = ({
   const handleSubmit = (e, item) => {
     e.preventDefault();
     if (education.length === 0) {
-      console.log(education);
       const newObject = {
         uni: uni,
         achieve: achieve,
