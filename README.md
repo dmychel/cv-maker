@@ -17,8 +17,7 @@ https://creative-gumption-e93819.netlify.app/
 <img src="https://raw.githubusercontent.com/vitejs/vite/5684fcd8d27110d098b3e1c19d851f44251588f1/docs/public/logo.svg" align="left" alt="vite" width="30px" style="padding-right:10px;">
 <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" align="left" alt="netlify" width="30px" style="padding-right:10px;">
 
-##
-
+#
 ## Dev Notes
 
 This project was fantastic for learning React. It compelled me to grasp and apply the useState and props flow, offering flexibility in implementing reusable components.
