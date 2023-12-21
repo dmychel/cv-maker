@@ -23,6 +23,7 @@ const EducationForm = ({
               item={item}
               education={education}
               setEducation={setEducation}
+              deleteEdu={deleteEdu}
             />
           </div>
         ))}

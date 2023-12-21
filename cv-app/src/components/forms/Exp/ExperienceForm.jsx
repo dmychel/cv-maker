@@ -23,6 +23,7 @@ const ExperienceForm = ({
               item={item}
               experience={experience}
               setExperience={setExperience}
+              deleteExp={deleteExp}
               className="edit-container"
             />
           </div>
