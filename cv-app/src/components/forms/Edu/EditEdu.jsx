@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-const EditEdu = ({ item, education, setEducation }) => {
+const EditEdu = ({ item, education, setEducation, deleteEdu }) => {
   const [uni, setUni] = useState("University Name");
   const [achieve, setAchieve] = useState("Acadmenic Accolade");
   const [date, setDate] = useState("2023");
@@ -29,6 +29,11 @@ const EditEdu = ({ item, education, setEducation }) => {
     <>
       <h3 onClick={() => toggleEvent(item.id)}>{uni}</h3>
       <div className="edit-form inactive" id={item.id}>
+        <div className="delete-btn-container">
+          <button className="delete" onClick={() => deleteEdu(item)}>
+            Delete Item
+          </button>
+        </div>
         <form onSubmit={(e) => handleSubmit(e, item)}>
           <label htmlFor="uni">University</label>
           <input
@@ -64,4 +69,5 @@ EditEdu.propTypes = {
   item: PropTypes.object,
   education: PropTypes.array,
   setEducation: PropTypes.func,
+  deleteEdu: PropTypes.func,
 };

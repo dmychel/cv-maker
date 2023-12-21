@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-const EditExp = ({ item, experience, setExperience }) => {
+const EditExp = ({ item, experience, setExperience, deleteExp }) => {
   const [company, setCompany] = useState(item.company);
   const [title, setTitle] = useState(item.title);
   const [date, setDate] = useState(item.date);
@@ -31,6 +31,11 @@ const EditExp = ({ item, experience, setExperience }) => {
     <>
       <h3 onClick={() => toggleEvent(item.id)}>{company}</h3>
       <div className="edit-form inactive" id={item.id}>
+        <div className="delete-btn-container">
+          <button className="delete" onClick={() => deleteExp(item)}>
+            Delete Item
+          </button>
+        </div>
         <form onSubmit={(e) => handleSubmit(e, item)}>
           <label htmlFor="company">Company</label>
           <input
@@ -74,4 +79,5 @@ EditExp.propTypes = {
   item: PropTypes.object,
   experience: PropTypes.array,
   setExperience: PropTypes.func,
+  deleteExp: PropTypes.func,
 };
