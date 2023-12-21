@@ -24,7 +24,6 @@ const CreateExpForm = ({ experience, setExperience }) => {
       <div className="form-container">
         <div className="form-header">
           <h3>{company}</h3>
-          {/* &#x2715; */}
         </div>
         <form onSubmit={(e) => handleSubmit(e)}>
           <label htmlFor="company">Company</label>
