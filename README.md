@@ -30,7 +30,7 @@ For the most part, this project was straightforward. However, I encountered chal
 
 ### App Flow Rendition 2
 
-<img src="public/img/app-flow02.png">
+<img src="cv-app/public/img/app-flow02.png">
 
 ### App Wireframe
 
