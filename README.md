@@ -25,15 +25,15 @@ For the most part, this project was straightforward. However, I encountered chal
 
 ### App Flow Rendition 1
 
-<img src="public/img/app-flow01.jpg">
+<img src="cv-app/public/img/app-flow01.jpg">
 
 ### App Flow Rendition 2
 
-<img src="public/img/app-flow02.png">
+<img src="cv-app/public/img/app-flow02.png">
 
 ### App Wireframe
 
-<img src="public/img/wire-frame.png">
+<img src="cv-app/public/img/wire-frame.png">
 
 While the final version of 1.0 looks a bit different the the Appl flow chart, the chart laid a great foundation down for me to problem solve and finish this project.
 
