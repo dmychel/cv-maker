@@ -1,6 +1,6 @@
 import PersonalForm from "./PersonalForm";
-import ExperienceForm from "./ExperienceForm";
-import EducationForm from "./EducationForm";
+import ExperienceForm from "./Exp/ExperienceForm";
+import EducationForm from "./Edu/EducationForm";
 import "../../styles/forms.css";
 import PropTypes from "prop-types";
 
