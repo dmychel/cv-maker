@@ -27,6 +27,26 @@
   margin-bottom: 10%;
 }
 
+.edit-exp-container h3,
+.edit-edu-container h3 {
+  display: flex;
+  justify-content: center;
+  background-color: #149eca;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 8%;
+}
+
+.edit-exp-container h3:hover,
+.edit-edu-container h3:hover {
+  background-color: #045b77;
+}
+
+
+.inactive {
+  display: none;
+}
 
 .personal-h2 {
   background-color: #149eca;
