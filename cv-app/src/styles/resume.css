@@ -34,3 +34,11 @@
 .edu-master h2 {
     border-bottom: 2px solid;
 }
+
+@media screen and (max-width: 768px) {
+    .master-resume {
+        height: 521px;
+        width: 397px;
+        font-size: .5rem;
+    }
+}

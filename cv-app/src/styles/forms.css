@@ -136,6 +136,6 @@ input {
 @media screen and (max-width: 768px) {
   .forms-master {
     flex-direction: column;
-    width: 40%;
+    width: 80%;
   }
 }
