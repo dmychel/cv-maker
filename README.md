@@ -42,7 +42,7 @@ While the final version of 1.0 looks a bit different the the Appl flow chart, th
 
 MIT License
 
-Copyright (c) 2023 Dylon Crowley-Perez
+Copyright (c) 2024 Dylon Crowley-Perez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
