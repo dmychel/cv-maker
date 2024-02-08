@@ -7,7 +7,7 @@ This Version allows you too add, edit, and delete items to a resume!
 ## Install
 
 There are no install steps, here's the link:
-[
+
 https://cv-maker-webapp.netlify.app/
 
 ## Built With
