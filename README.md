@@ -7,8 +7,8 @@ This Version allows you too add, edit, and delete items to a resume!
 ## Install
 
 There are no install steps, here's the link:
-
-https://creative-gumption-e93819.netlify.app/
+[
+https://cv-maker-webapp.netlify.app/
 
 ## Built With
 
